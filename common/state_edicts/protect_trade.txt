@@ -1,0 +1,84 @@
+edict_protect_trade = {
+	potential = {
+		always = yes		#we support "potential" if modders want to have lots and just show some.
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		province_trade_power_modifier = 0.50
+	}
+	
+	color = {  113 11 43 }
+	
+	
+	ai_will_do = {
+		factor = 10.0
+		modifier = {
+			factor = 0
+			all_province_in_state = {
+				NOT = { province_trade_power = 30 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			any_province_in_state = {
+				is_capital = yes
+				owner = {
+					NOT = { government = republic }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			any_province_in_state = {
+				is_capital = yes
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = { 
+				NOT = { trade_income_percentage = 0.3 } 
+			}
+		}
+		modifier = {
+			factor = 1.2
+			all_province_in_state = {
+				OR = {
+					region = low_countries_region
+					region = british_isles_region
+					region = italy_region
+					region = iberia_region
+					region = indonesia_region
+					region = bengal_region
+					region = west_india_region
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { trade_income_percentage = 0.3 }
+		}
+		modifier = {
+			factor = 2.0
+			any_province_in_state = {
+				trade_goods = silk
+				development = 15
+			}
+		}
+		modifier = {
+			factor = 3.0
+			any_province_in_state = {
+				province_trade_power = 30
+			}
+		}
+		modifier = {
+			factor = 4.0
+			all_province_in_state = {
+				province_trade_power = 40
+			}
+		}
+	}
+}

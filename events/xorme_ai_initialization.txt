@@ -1,0 +1,44 @@
+namespace = xorme_ai_initialization
+
+country_event = {
+	id = xorme_ai_initialization.1
+	title = "NONE"
+	picture = "NONE"
+	desc = "NONE"
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_game_started = yes
+	}
+
+	immediate = {
+		set_global_flag = xorme_ai_initialization
+		if = {
+			limit = {
+				AND = {
+					exists = MNG
+					ai = yes
+				}
+				MNG = {
+					OR = {
+						is_emperor_of_china = yes
+						has_country_modifier = the_mandate_of_heaven
+					}
+					AND = {
+						has_estate = estate_nobles
+						has_estate = estate_church
+						has_estate = estate_burghers
+					}
+					total_development = 900
+				}
+			}
+			MNG = { 
+				set_estate_privilege = estate_nobles_land_rights
+				set_estate_privilege = estate_church_land_rights
+				set_estate_privilege = estate_burghers_land_rights
+			}
+		}
+	}
+	option = {}
+}

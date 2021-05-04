@@ -1,0 +1,30 @@
+xorme_ai_small_nation_anti_rebel_modifier = {
+	potential = {
+		ai = yes
+		NOT = { total_development = 200 }
+	}
+
+	trigger = {
+		ai = yes
+	}
+
+	land_forcelimit = 1
+	naval_forcelimit = 1
+	global_unrest = -1
+}
+
+xorme_ai_big_nation_anti_rebel_modifier = {
+	potential = {
+		ai = yes
+		total_development = 200
+		NOT = { is_emperor = yes }
+	}
+
+	trigger = {
+		ai = yes
+	}
+	
+	land_forcelimit_modifier = 0.05
+	naval_forcelimit_modifier = 0.05
+	global_unrest = -1
+}

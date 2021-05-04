@@ -1,0 +1,108 @@
+edict_defensive_edict = {
+	potential = {
+		always = yes		#we support "potential" if modders want to have lots and just show some.
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_defensiveness = 0.33
+	}
+	
+	color = {  46 114 55  }
+	
+	ai_will_do = {
+		factor = 100.0
+		modifier = {
+			factor = 0
+			OR = {
+				any_province_in_state = {
+					AND = {
+						NOT = { fort_level = 1 }
+						owned_by = owner
+					}
+				}
+				owner = {
+					is_at_war = no
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			any_province_in_state = {
+				AND = {
+					fort_level = 1
+					owned_by = owner
+					has_siege = no
+				}
+			}
+		}
+		modifier = {
+			factor = 5.0
+			any_province_in_state = {
+				AND = {
+					fort_level = 1
+					owned_by = owner
+					has_siege = yes
+					controlled_by = owner
+				}
+			}
+		}
+		modifier = {
+			factor = 7.5
+			any_province_in_state = {
+				AND = {
+					fort_level = 2
+					owned_by = owner
+					has_siege = yes
+					controlled_by = owner
+				}
+			}
+		}
+		modifier = {
+			factor = 10.0
+			any_province_in_state = {
+				AND = {
+					fort_level = 4
+					owned_by = owner
+					has_siege = yes
+					controlled_by = owner
+				}
+			}
+		}
+		modifier = {
+			factor = 12.5
+			any_province_in_state = {
+				AND = {
+					fort_level = 6
+					owned_by = owner
+					has_siege = yes
+					controlled_by = owner
+				}
+			}
+		}
+		modifier = {
+			factor = 15.0
+			any_province_in_state = {
+				AND = {
+					fort_level = 8
+					owned_by = owner
+					has_siege = yes
+					controlled_by = owner
+				}
+			}
+		}
+		modifier = {
+			factor = 20.0
+			any_province_in_state = {
+				AND = {
+					is_capital = yes
+					has_siege = yes
+					controlled_by = owner
+				}
+			}
+		}
+	}
+}
