@@ -1595,7 +1595,7 @@ to_the_ground_policy = {
 	}
 }
 
-calming_the_tides_policy = { 
+calming_the_tides_policy = {
 	monarch_power = ADM
 	
 	potential = {
@@ -1873,7 +1873,7 @@ administration_of_sacred_land_policy = {
 	}
 }
 
-shared_land_policy = { 
+shared_land_policy = {
 	monarch_power = ADM
 	
 	potential = {
@@ -1897,7 +1897,7 @@ shared_land_policy = {
 	}
 }
 
-disruptive_innovation_policy = { 
+disruptive_innovation_policy = {
 	monarch_power = ADM
 	
 	potential = {

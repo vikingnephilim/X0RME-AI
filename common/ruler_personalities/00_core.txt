@@ -101,7 +101,8 @@ just_personality = {
 	wants_avoid_ugly_borders = yes
 	easy_war_chance_multiplier = 0.5
 	fair_fights = yes
-	
+	knowledge_sharing = yes
+
 	global_unrest = -2
 	nation_designer_cost = 2
 } #1 less bad
@@ -155,12 +156,11 @@ righteous_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	easy_war_chance_multiplier = 0.75
-	
-	legitimacy = 1
-	republican_tradition = 0.5
-
+	knowledge_sharing = yes
 	wants_ecumenical_council = yes
 
+	legitimacy = 1
+	republican_tradition = 0.5
 	nation_designer_cost = 2
 } #1 better, 1 less bad
 
@@ -213,7 +213,8 @@ tolerant_personality = {
 	wants_avoid_ugly_borders = yes
 	heretic_ally_acceptance = 10
 	heathen_ally_acceptance = 20
-	
+	knowledge_sharing = yes
+
 	tolerance_heretic = 1
 	tolerance_heathen = 1
 	wants_ecumenical_council = yes
@@ -249,9 +250,11 @@ kind_hearted_personality = {
 	chance = {
 	}
 	
-	gift_chance = 65
+	gift_chance = 55
 	alliance_acceptance = 10
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	war_exhaustion = -0.05
 	nation_designer_cost = 5
 } # 1 better
@@ -335,6 +338,7 @@ free_thinker_personality = {
 	
 	knowledge_sharing = yes
 	wants_avoid_ugly_borders = yes
+
 	idea_cost = -0.05
 	nation_designer_cost = 2
 } #1 easier event, 1 better event
@@ -387,6 +391,8 @@ well_connected_personality = {
 	
 	other_ai_help_us_multiplier = 2
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	advisor_cost = -0.2
 	nation_designer_cost = 2
 } #1 better event
@@ -432,6 +438,8 @@ calm_personality = {
 	war_chance_multiplier = 0.5
 	easy_war_chance_multiplier = 0.75
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	stability_cost_modifier = -0.10
 	nation_designer_cost = 2
 } #1 easier event
@@ -492,6 +500,8 @@ careful_personality = {
 	war_chance_multiplier = 0.4
 	enemy_strength_multiplier = 1.2
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	ae_impact = -0.10
 	nation_designer_cost = 5
 } #modifies scandal at court, 
@@ -545,6 +555,8 @@ secretive_personality = {
 	
 	wants_condottieri = yes
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	global_spy_defence = 0.2
 	nation_designer_cost = 2
 }
@@ -608,6 +620,8 @@ intricate_web_weaver_personality = {
 	
 	wants_condottieri = yes
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	spy_offence = 0.3
 	nation_designer_cost = 2
 } #1 easier event
@@ -667,6 +681,8 @@ fertile_personality = {
 	
 	royal_marriage_acceptance = 20
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	heir_chance = 0.5
 	nation_designer_cost = 2
 }
@@ -708,6 +724,8 @@ well_advised_personality = {
 	
 	war_chance_multiplier = 0.6
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+	
 	advisor_pool = 1
 	nation_designer_cost = 2
 } #2 better events
@@ -769,6 +787,8 @@ benevolent_personality = {
 	
 	gift_chance = 25
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	reduced_liberty_desire = 5
 	nation_designer_cost = 2
 }
@@ -833,9 +853,11 @@ zealot_personality = {
 	different_religion_war_multiplier = 2
 	heretic_ally_acceptance = -1000
 	heathen_ally_acceptance = -1000
+	knowledge_sharing = yes
 	wants_heathen_land = yes
 	wants_heretic_land = yes
 	wants_avoid_ugly_borders = yes
+
 	global_missionary_strength = 0.01
 	nation_designer_cost = 2
 }#1 better event, 1 less bad
@@ -870,11 +892,12 @@ pious_personality = {
 	
 	different_religion_war_multiplier = 1.5
 	wants_excommunicate = yes
+	knowledge_sharing = yes
 	heretic_ally_acceptance = -30
-	
-	devotion = 1
 	wants_ecumenical_council = yes
 	wants_avoid_ugly_borders = yes
+
+	devotion = 1
 	nation_designer_cost = 2
 } #1 Less bad
 
@@ -930,6 +953,8 @@ lawgiver_personality = {
 	
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	global_autonomy = -0.05
 	nation_designer_cost = 5
 } #2 easier events
@@ -1000,6 +1025,8 @@ midas_touched_personality = {
 	wants_gold = yes
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	global_tax_modifier = 0.1 
 	nation_designer_cost = 2
 } #Opens Exceptional Year, 1 better event
@@ -1059,6 +1086,8 @@ incorruptible_personality = {
 	gift_chance = -50
 	wants_avoid_debase = yes
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	yearly_corruption = -0.05
 	nation_designer_cost = 2
 } #1 better, 1 less bad
@@ -1111,6 +1140,7 @@ architectural_visionary_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	building_budget_multiplier = 1.8
+	knowledge_sharing = yes
 	
 	build_cost = -0.1
 	nation_designer_cost = 2
@@ -1158,7 +1188,6 @@ scholar_personality = {
 	chance = { }
 	wants_avoid_ugly_borders = yes
 	custom_ai_explanation = "AI_RULER_SPEND_UNLOCK_INSTIT"
-	
 	knowledge_sharing = yes
 	
 	technology_cost = -0.05
@@ -1217,7 +1246,8 @@ entrepreneur_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	building_budget_multiplier = 1.5
-	
+	knowledge_sharing = yes
+
 	trade_efficiency = 0.1
 	nation_designer_cost = 2
 } #Opens Exceptional Year, 1 better event, 3 less bad
@@ -1260,6 +1290,7 @@ industrious_personality = {
 		}
 	}
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
 	building_budget_multiplier = 1.2
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	
@@ -1336,6 +1367,7 @@ expansionist_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	wants_colonies = yes
+	knowledge_sharing = yes
 	
 	global_colonial_growth = 15
 	nation_designer_cost = 2
@@ -1403,6 +1435,8 @@ charismatic_negotiator_personality = {
 	
 	other_ai_peace_term_bonus = 10
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	diplomatic_reputation = 1
 	nation_designer_cost = 2
 } #1 easier event, 2 better events
@@ -1469,7 +1503,8 @@ silver_tongue_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	other_ai_war_chance_multiplier = 0.5
-	
+	knowledge_sharing = yes
+
 	improve_relation_modifier = 0.2
 	nation_designer_cost = 2
 } #2 easier events, 3 better events
@@ -1526,15 +1561,16 @@ conqueror_personality = {
 	allow = {
 		
 	}
-	years_of_nationalism = -5
-	nation_designer_cost = 2
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
 	easy_war_chance_multiplier = 2
 	war_chance_multiplier = 1.75
 	building_budget_multiplier = 0.2
 	gift_chance = -50
 	wants_land = yes
 	
+	years_of_nationalism = -5
+	nation_designer_cost = 2
 	chance = {
 		
 	}
@@ -1597,6 +1633,8 @@ tactical_genius_personality = {
 	
 	easy_war_chance_multiplier = 1.4
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	leader_land_manuever = 1
 	nation_designer_cost = 2
 } #1 better
@@ -1655,6 +1693,8 @@ bold_fighter_personality = {
 	
 	enemy_strength_multiplier = 0.85
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	leader_land_shock = 1
 	nation_designer_cost = 2
 } #
@@ -1702,7 +1742,8 @@ strict_personality = {
 	wants_avoid_debase = yes
 	wants_avoid_loans = yes
 	wants_ecumenical_council = yes
-	
+	knowledge_sharing = yes
+
 	discipline = 0.05
 
 	nation_designer_cost = 5
@@ -1765,6 +1806,8 @@ inspiring_leader_personality = {
 	chance = {
 	}
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	land_morale = 0.05
 	nation_designer_cost = 5
 } #1 better
@@ -1814,6 +1857,7 @@ martial_educator_personality = {
 	chance = {
 	}
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
 	easy_war_chance_multiplier = 1.2
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	
@@ -1875,6 +1919,7 @@ navigator_personality = {
 	wants_avoid_ugly_borders = yes
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
 	wants_explorers = yes
+	knowledge_sharing = yes
 	
 	ship_durability = 0.1
 	nation_designer_cost = 2
@@ -1930,6 +1975,8 @@ fierce_negotiator_personality = {
 	
 	peace_desire = -10
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	merc_maintenance_modifier = -0.25
 	nation_designer_cost = 2
 } #1 easier event
@@ -2023,12 +2070,13 @@ babbling_buffoon_personality = {
 	allow = {
 		
 	}
-	diplomatic_reputation = -1
-	nation_designer_cost = -2
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
 	random_insults = yes
 	wants_disclose_attack = yes
-	
+
+	diplomatic_reputation = -1
+	nation_designer_cost = -2
 	chance = {
 		
 	}
@@ -2121,6 +2169,7 @@ embezzler_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	wants_debase = yes
+	knowledge_sharing = yes
 	wants_to_appoint_cardinals_in_his_own_land = yes
 	#wants_sell_ships = yes
 	wants_sell_provinces = yes
@@ -2232,6 +2281,8 @@ infertile_personality = {
 	
 	royal_marriage_acceptance = -20
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
+
 	heir_chance = -0.25
 	nation_designer_cost = -2
 }
@@ -2327,6 +2378,7 @@ drunkard_personality = {
 	chance = {
 	}
 	wants_avoid_ugly_borders = yes
+	knowledge_sharing = yes
 	#random_troop_moves = yes Commenting out since often indistinguishable from a bug.
 	wants_loans = yes
 	
@@ -2425,6 +2477,7 @@ sinner_personality = {
 	
 	chance = {
 	}
+	knowledge_sharing = yes
 	wants_avoid_ugly_borders = yes
 	different_religion_war_multiplier = 0.8
 	razing = yes
@@ -2519,9 +2572,14 @@ greedy_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	wants_gold = yes
+	knowledge_sharing = yes
 	wants_to_appoint_cardinals_in_his_own_land = yes
 	gift_chance = -100
 	
+	trade_league_acceptance = -10
+	global_tax_modifier = -0.1
+	nation_designer_cost = -2
+
 	war_priority = {
 		modifier = {
 			factor = 1.1
@@ -2552,10 +2610,6 @@ greedy_personality = {
 			gold_income_percentage = 0.2
 		}
 	}
-	
-	trade_league_acceptance = -10
-	global_tax_modifier = -0.1
-	nation_designer_cost = -2
 } #2 better
 cruel_personality = {
 
@@ -2641,7 +2695,7 @@ cruel_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	wants_betray_allies = yes
-
+	knowledge_sharing = yes
 	razing = yes
 	lower_autonomy = yes
 	
@@ -2751,6 +2805,7 @@ naive_personality = {
 	wants_avoid_ugly_borders = yes
 	underestimate_ae = yes
 	fair_fights = yes
+	knowledge_sharing = yes
 	gift_chance = 90
 	
 	improve_relation_modifier = -0.2
@@ -2853,6 +2908,7 @@ craven_personality = {
 	chance = {
 		
 	}
+	knowledge_sharing = yes
 	wants_avoid_ugly_borders = yes
 	enemy_strength_multiplier = 1.25
 	
@@ -2948,7 +3004,8 @@ loose_lips_personality = {
 	}
 	wants_avoid_ugly_borders = yes
 	wants_disclose_attack = yes
-	
+	knowledge_sharing = yes
+
 	global_spy_defence = -0.2
 	nation_designer_cost = -2
 }
@@ -3036,7 +3093,7 @@ obsessive_perfectionist_personality = {
 	
 	chance = {
 	}
-	
+	knowledge_sharing = yes
 	wants_avoid_ugly_borders = yes
 	
 	build_cost = 0.1
@@ -3130,6 +3187,7 @@ malevolent_personality = {
 	
 	chance = {
 	}
+	knowledge_sharing = yes
 	wants_avoid_ugly_borders = yes
 	wants_betray_allies = yes
 	wants_threaten_war = yes
@@ -3241,6 +3299,7 @@ humane_personality = {
 			meritocracy = 90
 		}
 	}
+	knowledge_sharing = yes
 	wants_avoid_ugly_borders = yes
 	fair_fights = yes
 	gift_chance = 30
@@ -3347,6 +3406,7 @@ petty_personality = {
 			meritocracy = 90
 		}
 	}
+	knowledge_sharing = yes
 	wants_avoid_ugly_borders = yes
 	random_insults = yes
 	wants_betray_allies = yes

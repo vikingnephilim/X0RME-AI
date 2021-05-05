@@ -1608,7 +1608,15 @@ town_hall = {
 			num_of_buildings_in_province = 2
 		}
 		modifier = {
+			factor = 1.4
+			owner = { total_development = 250 }
+		}
+		modifier = {
 			factor = 1.45
+			owner = { total_development = 500 }
+		}
+		modifier = {
+			factor = 1.5
 			owner = { total_development = 1000 }
 		}
 		modifier = {
@@ -1622,6 +1630,22 @@ town_hall = {
 		modifier = {
 			factor = 2.5
 			owner = { num_of_territories = 15 }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { num_of_states = 20 }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { num_of_states = 30 }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { num_of_states = 40 }
+		}
+		modifier = {
+			factor = 2.5
+			owner = { num_of_states = 50 }
 		}
 		modifier = {
 			factor = 2.5
@@ -1651,7 +1675,11 @@ town_hall = {
 			num_of_buildings_in_province = 5
 		}
 		modifier = {
-			factor = 6.0
+			factor = 10.0
+			num_of_buildings_in_province = 6
+		}
+		modifier = {
+			factor = 20.0
 			AND = {
 				OR = {
 					has_building = tradecompany

@@ -15,7 +15,7 @@ country_decisions = {
 		}
 
 		effect = {
-			add_years_of_income = 0.75
+			add_years_of_income = 1.0
 			add_corruption = 1.5
 			add_inflation = 1.5
 		}

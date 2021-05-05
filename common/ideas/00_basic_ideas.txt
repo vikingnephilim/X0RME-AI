@@ -1076,9 +1076,6 @@ trade_ideas = {
 	}
 }
 
-
-
-
 economic_ideas = {
 	category = ADM
 
@@ -1109,7 +1106,7 @@ economic_ideas = {
  	}
 
 	ai_will_do = {
-		factor = 0.85
+		factor = 0.83
 		modifier = {
 			factor = 0.5
 			ROOT = { NOT = { num_of_states = 6 } }
@@ -1233,6 +1230,10 @@ economic_ideas = {
 		}
 		modifier = {
 			factor = 5.0
+			ROOT = { tag = MNG }
+		}
+		modifier = {
+			factor = 5.0
 			ROOT = { num_of_cities = 100 }
 		}
 		modifier = {
@@ -1245,13 +1246,12 @@ economic_ideas = {
 			}
 		}
 		modifier = {
-			factor = 15.0
+			factor = 20.0
 			ROOT = { 
 				OR = {
 					tag = FRA
 					tag = MOS
 					tag = LIT
-					tag = MNG
 				}
 			}
 		}
@@ -1260,7 +1260,7 @@ economic_ideas = {
 			ROOT = { has_idea_group = quantity_ideas }
 		}
 		modifier = {
-			factor = 1000.0
+			factor = 100.0
 			ROOT = { 
 				AND = {
 				tag = MNG

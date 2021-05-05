@@ -9,8 +9,8 @@ province = {
                 owner = { war_with = ROOT }
 				NOT = { 
                     OR = {
-                    owned_by = ROOT 
-                    controlled_by = ROOT
+                        owned_by = ROOT 
+                        controlled_by = ROOT
                     }
                 }
 				OR = {
