@@ -29,12 +29,6 @@ edict_encourage_development = {
 			owner = { government = tribal }
 		}
 		modifier = {
-			factor = 0.8
-			all_province_in_state = {
-				NOT = { development = 10 }
-			}
-		}
-		modifier = {
 			factor = 0.9
 			any_province_in_state = {
 				trade_goods = grain

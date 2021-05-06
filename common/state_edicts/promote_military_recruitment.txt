@@ -49,12 +49,6 @@ edict_promote_military_recruitment = {
 			owner = { is_great_power = yes }
 		}
 		modifier = {
-			factor = 1.1
-			all_province_in_state = {
-				owned_by = owner
-			}
-		}
-		modifier = {
 			factor = 1.25
 			any_province_in_state = {
 				trade_goods = grain
