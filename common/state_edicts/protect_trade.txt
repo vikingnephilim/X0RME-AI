@@ -34,10 +34,8 @@ edict_protect_trade = {
 			factor = 0.5
 			any_province_in_state = {
 				is_capital = yes
-				owner = {
-					NOT = { government = republic }
-				}
 			}
+			owner = { NOT = { government = republic } }
 		}
 		modifier = {
 			factor = 0.75
@@ -53,16 +51,14 @@ edict_protect_trade = {
 		}
 		modifier = {
 			factor = 1.2
-			all_province_in_state = {
-				OR = {
-					region = low_countries_region
-					region = british_isles_region
-					region = italy_region
-					region = iberia_region
-					region = indonesia_region
-					region = bengal_region
-					region = west_india_region
-				}
+			OR = {
+				region = low_countries_region
+				region = british_isles_region
+				region = italy_region
+				region = iberia_region
+				region = indonesia_region
+				region = bengal_region
+				region = west_india_region
 			}
 		}
 		modifier = {
@@ -72,8 +68,10 @@ edict_protect_trade = {
 		modifier = {
 			factor = 2.0
 			any_province_in_state = {
-				trade_goods = silk
-				development = 15
+				AND = {
+					trade_goods = silk
+					development = 15
+				}
 			}
 		}
 		modifier = {

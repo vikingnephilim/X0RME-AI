@@ -15,11 +15,7 @@ edict_promote_military_recruitment = {
 	
 	
 	ai_will_do = {
-		factor = 15.0
-		modifier = {
-			factor = 0
-			owner = { manpower_percentage = 0.6 }
-		}
+		factor = 25.0
 		modifier = {
 			factor = 0
 			any_province_in_state = {
@@ -33,6 +29,12 @@ edict_promote_military_recruitment = {
 			}
 		}
 		modifier = {
+			factor = 0.6
+			any_province_in_state = {
+				fort_level = 1
+			}
+		}
+		modifier = {
 			factor = 0.75
 			any_province_in_state = {
 				NOT = { culture = owner }
@@ -43,6 +45,10 @@ edict_promote_military_recruitment = {
 			any_province_in_state = {
 				NOT = { religion = owner }
 			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = { owner = { manpower_percentage = 0.5 } }
 		}
 		modifier = {
 			factor = 1.1
@@ -73,10 +79,6 @@ edict_promote_military_recruitment = {
 			}
 		}
 		modifier = {
-			factor = 1.5
-			owner = { is_at_war = yes }
-		}
-		modifier = {
 			factor = 2.5
 			all_province_in_state = {
 				has_building = barracks
@@ -89,13 +91,35 @@ edict_promote_military_recruitment = {
 			}
 		}
 		modifier = {
-			factor = 3.5
+			factor = 3.0
+			owner = { manpower_percentage = 1.0 }
+		}
+		modifier = {
+			factor = 3.0
 			all_province_in_state = {
 				base_manpower = 5
 			}
-			any_province_in_state = {
+		}
+		modifier = {
+			factor = 3.0
+			all_province_in_state = {
 				base_manpower = 10
 			}
+		}
+		modifier = {
+			factor = 3.5
+			AND = {
+				all_province_in_state = {
+					base_manpower = 5
+				}
+				any_province_in_state = {
+					base_manpower = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 4.0
+			owner = { is_at_war = yes }
 		}
 	}
 }
