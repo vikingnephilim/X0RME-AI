@@ -8,7 +8,7 @@ province = {
             modifier = {
 				num_of_units_in_province = {
 					who = ROOT
-					amount = 35
+					amount = 32
 				}
 				unit_in_battle = no
             }
