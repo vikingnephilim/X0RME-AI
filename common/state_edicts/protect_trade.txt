@@ -23,6 +23,14 @@ edict_protect_trade = {
 			}
 		}
 		modifier = {
+			factor = 0.1
+			owner = { government = native }
+		}
+		modifier = {
+			factor = 0.2
+			owner = { government = tribal }
+		}
+		modifier = {
 			factor = 0.5
 			any_province_in_state = {
 				is_capital = yes
