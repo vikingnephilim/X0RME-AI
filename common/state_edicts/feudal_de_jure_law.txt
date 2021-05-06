@@ -19,7 +19,7 @@ edict_feudal_de_jure_law = {
 	
 	
 	ai_will_do = {
-		factor = 10.0
+		factor = 15.0
 		modifier = {
 			factor = 0
 			any_province_in_state = {

@@ -15,7 +15,7 @@ edict_promote_military_recruitment = {
 	
 	
 	ai_will_do = {
-		factor = 10.0
+		factor = 15.0
 		modifier = {
 			factor = 0
 			owner = { manpower_percentage = 0.6 }

@@ -15,140 +15,152 @@ defender_of_faith_1 = {
 		}
 		modifier = {
 			factor = 0
-			num_of_loans = 1
+			ROOT = { num_of_loans = 1 }
 		}
 		modifier = {
 			factor = 0 
-			NOT = { total_development = 150 }
+			ROOT = { NOT = { total_development = 150 } }
 		}
 		modifier = {
 			factor = 0
-			NOT = {
-				num_of_cities = 20
-			}
+			ROOT = { NOT = { num_of_cities = 20 } }
 		}
 		modifier = {
 			factor = 0.1
-			is_bankrupt = yes
+			ROOT = { is_bankrupt = yes }
 		}
 		modifier = {
 			factor = 0.25
-			NOT = {
-				num_of_cities = 25
-			}
+			ROOT = { NOT = { num_of_cities = 25 } }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = {
-				OR = {
-				ruler_has_personality = zealot_personality 
-				ruler_has_personality = pious_personality
+			ROOT = { 
+				NOT = {
+					OR = {
+					ruler_has_personality = zealot_personality 
+					ruler_has_personality = pious_personality
+					}
 				}
 			}
 		}
 		modifier = {
 			factor = 0.25
-			is_great_power = no
+			ROOT = { is_great_power = no }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { army_size_percentage = 0.75 }
+			ROOT = { NOT = { army_size_percentage = 0.75 } }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { treasury = 750 }
+			ROOT = { NOT = { treasury = 750 } }
 		}
 		modifier = {
 			factor = 0.75
-			full_idea_group = humanist_ideas
+			ROOT = { full_idea_group = humanist_ideas }
 		}
 		modifier = {
 			factor = 0.90
-			is_at_war = yes
+			ROOT = { is_at_war = yes }
 		}
 		modifier = {
 			factor = 0.90
-			is_in_deficit = yes
+			ROOT = { is_in_deficit = yes }
 		}
 		modifier = {
 			factor = 1.20
-			is_defender_of_faith = yes
+			ROOT = { is_defender_of_faith = yes }
 		}
 		modifier = {
 			factor = 1.25
-			full_idea_group = religious_ideas
+			ROOT = { full_idea_group = religious_ideas }
 		}
 		modifier = {
 			factor = 1.25
-			has_border_with_religious_enemy = yes
+			ROOT = { has_border_with_religious_enemy = yes }
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = TUR
-					tag = MAM
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = TUR
+						tag = MAM
+					}
+					religion = sunni
 				}
-				religion = sunni
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = MOS
-					tag = RUS
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = MOS
+						tag = RUS
+					}
+					religion = orthodox
 				}
-				religion = orthodox
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				tag = ETH
-				religion = coptic
+			ROOT = {
+				AND = {
+					tag = ETH
+					religion = coptic
+				}
 			}
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = HAB
-				tag = FRA
-				tag = POL
-			}
+			ROOT = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+					tag = HAB
+					tag = FRA
+					tag = POL
+				}
 			religion = catholic
+			}
 		}
 		modifier = {
 			factor = 2.0
-			tag = SWE
-			religion = protestant
+			ROOT = {
+				AND = {
+					tag = SWE
+					religion = protestant
+				}
+			}
 		}
 		modifier = {
 			factor = 2.5
-			is_great_power = yes
-			religion = catholic
-			OR = {
-				TUR = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT 
+			ROOT = {
+				is_great_power = yes
+				religion = catholic
+				OR = {
+					TUR = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT 
+						}
 					}
-				}
-				MAM = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT
+					MAM = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT
+						}
 					}
 				}
 			}
 		}
-		modifier ={
+		modifier = {
 			factor = 5.0
-			is_great_power = yes
+			ROOT = { is_great_power = yes }
 		}
 	}
 }
@@ -171,140 +183,152 @@ defender_of_faith_2 = {
 		}
 		modifier = {
 			factor = 0
-			num_of_loans = 1
+			ROOT = { num_of_loans = 1 }
 		}
 		modifier = {
 			factor = 0 
-			NOT = { total_development = 150 }
+			ROOT = { NOT = { total_development = 150 } }
 		}
 		modifier = {
 			factor = 0
-			NOT = {
-				num_of_cities = 20
-			}
+			ROOT = { NOT = { num_of_cities = 20 } }
 		}
 		modifier = {
 			factor = 0.1
-			is_bankrupt = yes
+			ROOT = { is_bankrupt = yes }
 		}
 		modifier = {
 			factor = 0.25
-			NOT = {
-				num_of_cities = 25
-			}
+			ROOT = { NOT = { num_of_cities = 25 } }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = {
-				OR = {
-				ruler_has_personality = zealot_personality 
-				ruler_has_personality = pious_personality
+			ROOT = { 
+				NOT = {
+					OR = {
+					ruler_has_personality = zealot_personality 
+					ruler_has_personality = pious_personality
+					}
 				}
 			}
 		}
 		modifier = {
 			factor = 0.25
-			is_great_power = no
+			ROOT = { is_great_power = no }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { army_size_percentage = 0.75 }
+			ROOT = { NOT = { army_size_percentage = 0.75 } }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { treasury = 750 }
+			ROOT = { NOT = { treasury = 750 } }
 		}
 		modifier = {
 			factor = 0.75
-			full_idea_group = humanist_ideas
+			ROOT = { full_idea_group = humanist_ideas }
 		}
 		modifier = {
 			factor = 0.90
-			is_at_war = yes
+			ROOT = { is_at_war = yes }
 		}
 		modifier = {
 			factor = 0.90
-			is_in_deficit = yes
+			ROOT = { is_in_deficit = yes }
 		}
 		modifier = {
 			factor = 1.20
-			is_defender_of_faith = yes
+			ROOT = { is_defender_of_faith = yes }
 		}
 		modifier = {
 			factor = 1.25
-			full_idea_group = religious_ideas
+			ROOT = { full_idea_group = religious_ideas }
 		}
 		modifier = {
 			factor = 1.25
-			has_border_with_religious_enemy = yes
+			ROOT = { has_border_with_religious_enemy = yes }
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = TUR
-					tag = MAM
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = TUR
+						tag = MAM
+					}
+					religion = sunni
 				}
-				religion = sunni
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = MOS
-					tag = RUS
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = MOS
+						tag = RUS
+					}
+					religion = orthodox
 				}
-				religion = orthodox
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				tag = ETH
-				religion = coptic
+			ROOT = {
+				AND = {
+					tag = ETH
+					religion = coptic
+				}
 			}
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = HAB
-				tag = FRA
-				tag = POL
-			}
+			ROOT = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+					tag = HAB
+					tag = FRA
+					tag = POL
+				}
 			religion = catholic
+			}
 		}
 		modifier = {
 			factor = 2.0
-			tag = SWE
-			religion = protestant
+			ROOT = {
+				AND = {
+					tag = SWE
+					religion = protestant
+				}
+			}
 		}
 		modifier = {
 			factor = 2.5
-			is_great_power = yes
-			religion = catholic
-			OR = {
-				TUR = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT 
+			ROOT = {
+				is_great_power = yes
+				religion = catholic
+				OR = {
+					TUR = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT 
+						}
 					}
-				}
-				MAM = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT
+					MAM = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT
+						}
 					}
 				}
 			}
 		}
-		modifier ={
+		modifier = {
 			factor = 5.0
-			is_great_power = yes
+			ROOT = { is_great_power = yes }
 		}
 	}
 }
@@ -328,140 +352,152 @@ defender_of_faith_3 = {
 		}
 		modifier = {
 			factor = 0
-			num_of_loans = 1
+			ROOT = { num_of_loans = 1 }
 		}
 		modifier = {
 			factor = 0 
-			NOT = { total_development = 150 }
+			ROOT = { NOT = { total_development = 150 } }
 		}
 		modifier = {
 			factor = 0
-			NOT = {
-				num_of_cities = 20
-			}
+			ROOT = { NOT = { num_of_cities = 20 } }
 		}
 		modifier = {
 			factor = 0.1
-			is_bankrupt = yes
+			ROOT = { is_bankrupt = yes }
 		}
 		modifier = {
 			factor = 0.25
-			NOT = {
-				num_of_cities = 25
-			}
+			ROOT = { NOT = { num_of_cities = 25 } }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = {
-				OR = {
-				ruler_has_personality = zealot_personality 
-				ruler_has_personality = pious_personality
+			ROOT = { 
+				NOT = {
+					OR = {
+					ruler_has_personality = zealot_personality 
+					ruler_has_personality = pious_personality
+					}
 				}
 			}
 		}
 		modifier = {
 			factor = 0.25
-			is_great_power = no
+			ROOT = { is_great_power = no }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { army_size_percentage = 0.75 }
+			ROOT = { NOT = { army_size_percentage = 0.75 } }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { treasury = 750 }
+			ROOT = { NOT = { treasury = 750 } }
 		}
 		modifier = {
 			factor = 0.75
-			full_idea_group = humanist_ideas
+			ROOT = { full_idea_group = humanist_ideas }
 		}
 		modifier = {
 			factor = 0.90
-			is_at_war = yes
+			ROOT = { is_at_war = yes }
 		}
 		modifier = {
 			factor = 0.90
-			is_in_deficit = yes
+			ROOT = { is_in_deficit = yes }
 		}
 		modifier = {
 			factor = 1.20
-			is_defender_of_faith = yes
+			ROOT = { is_defender_of_faith = yes }
 		}
 		modifier = {
 			factor = 1.25
-			full_idea_group = religious_ideas
+			ROOT = { full_idea_group = religious_ideas }
 		}
 		modifier = {
 			factor = 1.25
-			has_border_with_religious_enemy = yes
+			ROOT = { has_border_with_religious_enemy = yes }
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = TUR
-					tag = MAM
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = TUR
+						tag = MAM
+					}
+					religion = sunni
 				}
-				religion = sunni
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = MOS
-					tag = RUS
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = MOS
+						tag = RUS
+					}
+					religion = orthodox
 				}
-				religion = orthodox
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				tag = ETH
-				religion = coptic
+			ROOT = {
+				AND = {
+					tag = ETH
+					religion = coptic
+				}
 			}
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = HAB
-				tag = FRA
-				tag = POL
-			}
+			ROOT = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+					tag = HAB
+					tag = FRA
+					tag = POL
+				}
 			religion = catholic
+			}
 		}
 		modifier = {
 			factor = 2.0
-			tag = SWE
-			religion = protestant
+			ROOT = {
+				AND = {
+					tag = SWE
+					religion = protestant
+				}
+			}
 		}
 		modifier = {
 			factor = 2.5
-			is_great_power = yes
-			religion = catholic
-			OR = {
-				TUR = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT 
+			ROOT = {
+				is_great_power = yes
+				religion = catholic
+				OR = {
+					TUR = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT 
+						}
 					}
-				}
-				MAM = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT
+					MAM = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT
+						}
 					}
 				}
 			}
 		}
-		modifier ={
+		modifier = {
 			factor = 5.0
-			is_great_power = yes
+			ROOT = { is_great_power = yes }
 		}
 	}
 }
@@ -487,140 +523,152 @@ defender_of_faith_4 = {
 		}
 		modifier = {
 			factor = 0
-			num_of_loans = 1
+			ROOT = { num_of_loans = 1 }
 		}
 		modifier = {
 			factor = 0 
-			NOT = { total_development = 150 }
+			ROOT = { NOT = { total_development = 150 } }
 		}
 		modifier = {
 			factor = 0
-			NOT = {
-				num_of_cities = 20
-			}
+			ROOT = { NOT = { num_of_cities = 20 } }
 		}
 		modifier = {
 			factor = 0.1
-			is_bankrupt = yes
+			ROOT = { is_bankrupt = yes }
 		}
 		modifier = {
 			factor = 0.25
-			NOT = {
-				num_of_cities = 25
-			}
+			ROOT = { NOT = { num_of_cities = 25 } }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = {
-				OR = {
-				ruler_has_personality = zealot_personality 
-				ruler_has_personality = pious_personality
+			ROOT = { 
+				NOT = {
+					OR = {
+					ruler_has_personality = zealot_personality 
+					ruler_has_personality = pious_personality
+					}
 				}
 			}
 		}
 		modifier = {
 			factor = 0.25
-			is_great_power = no
+			ROOT = { is_great_power = no }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { army_size_percentage = 0.75 }
+			ROOT = { NOT = { army_size_percentage = 0.75 } }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { treasury = 750 }
+			ROOT = { NOT = { treasury = 750 } }
 		}
 		modifier = {
 			factor = 0.75
-			full_idea_group = humanist_ideas
+			ROOT = { full_idea_group = humanist_ideas }
 		}
 		modifier = {
 			factor = 0.90
-			is_at_war = yes
+			ROOT = { is_at_war = yes }
 		}
 		modifier = {
 			factor = 0.90
-			is_in_deficit = yes
+			ROOT = { is_in_deficit = yes }
 		}
 		modifier = {
 			factor = 1.20
-			is_defender_of_faith = yes
+			ROOT = { is_defender_of_faith = yes }
 		}
 		modifier = {
 			factor = 1.25
-			full_idea_group = religious_ideas
+			ROOT = { full_idea_group = religious_ideas }
 		}
 		modifier = {
 			factor = 1.25
-			has_border_with_religious_enemy = yes
+			ROOT = { has_border_with_religious_enemy = yes }
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = TUR
-					tag = MAM
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = TUR
+						tag = MAM
+					}
+					religion = sunni
 				}
-				religion = sunni
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = MOS
-					tag = RUS
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = MOS
+						tag = RUS
+					}
+					religion = orthodox
 				}
-				religion = orthodox
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				tag = ETH
-				religion = coptic
+			ROOT = {
+				AND = {
+					tag = ETH
+					religion = coptic
+				}
 			}
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = HAB
-				tag = FRA
-				tag = POL
-			}
+			ROOT = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+					tag = HAB
+					tag = FRA
+					tag = POL
+				}
 			religion = catholic
+			}
 		}
 		modifier = {
 			factor = 2.0
-			tag = SWE
-			religion = protestant
+			ROOT = {
+				AND = {
+					tag = SWE
+					religion = protestant
+				}
+			}
 		}
 		modifier = {
 			factor = 2.5
-			is_great_power = yes
-			religion = catholic
-			OR = {
-				TUR = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT 
+			ROOT = {
+				is_great_power = yes
+				religion = catholic
+				OR = {
+					TUR = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT 
+						}
 					}
-				}
-				MAM = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT
+					MAM = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT
+						}
 					}
 				}
 			}
 		}
-		modifier ={
+		modifier = {
 			factor = 5.0
-			is_great_power = yes
+			ROOT = { is_great_power = yes }
 		}
 	}
 }
@@ -649,140 +697,152 @@ defender_of_faith_5 = {
 		}
 		modifier = {
 			factor = 0
-			num_of_loans = 1
+			ROOT = { num_of_loans = 1 }
 		}
 		modifier = {
 			factor = 0 
-			NOT = { total_development = 150 }
+			ROOT = { NOT = { total_development = 150 } }
 		}
 		modifier = {
 			factor = 0
-			NOT = {
-				num_of_cities = 20
-			}
+			ROOT = { NOT = { num_of_cities = 20 } }
 		}
 		modifier = {
 			factor = 0.1
-			is_bankrupt = yes
+			ROOT = { is_bankrupt = yes }
 		}
 		modifier = {
 			factor = 0.25
-			NOT = {
-				num_of_cities = 25
-			}
+			ROOT = { NOT = { num_of_cities = 25 } }
 		}
 		modifier = {
 			factor = 0.5
-			NOT = {
-				OR = {
-				ruler_has_personality = zealot_personality 
-				ruler_has_personality = pious_personality
+			ROOT = { 
+				NOT = {
+					OR = {
+					ruler_has_personality = zealot_personality 
+					ruler_has_personality = pious_personality
+					}
 				}
 			}
 		}
 		modifier = {
 			factor = 0.25
-			is_great_power = no
+			ROOT = { is_great_power = no }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { army_size_percentage = 0.75 }
+			ROOT = { NOT = { army_size_percentage = 0.75 } }
 		}
 		modifier = {
 			factor = 0.75
-			NOT = { treasury = 750 }
+			ROOT = { NOT = { treasury = 750 } }
 		}
 		modifier = {
 			factor = 0.75
-			full_idea_group = humanist_ideas
+			ROOT = { full_idea_group = humanist_ideas }
 		}
 		modifier = {
 			factor = 0.90
-			is_at_war = yes
+			ROOT = { is_at_war = yes }
 		}
 		modifier = {
 			factor = 0.90
-			is_in_deficit = yes
+			ROOT = { is_in_deficit = yes }
 		}
 		modifier = {
 			factor = 1.20
-			is_defender_of_faith = yes
+			ROOT = { is_defender_of_faith = yes }
 		}
 		modifier = {
 			factor = 1.25
-			full_idea_group = religious_ideas
+			ROOT = { full_idea_group = religious_ideas }
 		}
 		modifier = {
 			factor = 1.25
-			has_border_with_religious_enemy = yes
+			ROOT = { has_border_with_religious_enemy = yes }
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = TUR
-					tag = MAM
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = TUR
+						tag = MAM
+					}
+					religion = sunni
 				}
-				religion = sunni
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				OR = {
-					tag = MOS
-					tag = RUS
+			ROOT = { 
+				AND = {
+					OR = {
+						tag = MOS
+						tag = RUS
+					}
+					religion = orthodox
 				}
-				religion = orthodox
 			}
 		}
 		modifier = {
 			factor = 1.25
-			AND = {
-				tag = ETH
-				religion = coptic
+			ROOT = {
+				AND = {
+					tag = ETH
+					religion = coptic
+				}
 			}
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = HAB
-				tag = FRA
-				tag = POL
-			}
+			ROOT = { 
+				OR = {
+					tag = SPA
+					tag = CAS
+					tag = HAB
+					tag = FRA
+					tag = POL
+				}
 			religion = catholic
+			}
 		}
 		modifier = {
 			factor = 2.0
-			tag = SWE
-			religion = protestant
+			ROOT = {
+				AND = {
+					tag = SWE
+					religion = protestant
+				}
+			}
 		}
 		modifier = {
 			factor = 2.5
-			is_great_power = yes
-			religion = catholic
-			OR = {
-				TUR = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT 
+			ROOT = {
+				is_great_power = yes
+				religion = catholic
+				OR = {
+					TUR = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT 
+						}
 					}
-				}
-				MAM = {
-					AND = {
-						is_great_power = yes
-						is_defender_of_faith = yes
-						is_rival = ROOT
+					MAM = {
+						AND = {
+							is_great_power = yes
+							is_defender_of_faith = yes
+							is_rival = ROOT
+						}
 					}
 				}
 			}
 		}
-		modifier ={
+		modifier = {
 			factor = 5.0
-			is_great_power = yes
+			ROOT = { is_great_power = yes }
 		}
 	}
 }

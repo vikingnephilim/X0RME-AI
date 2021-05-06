@@ -15,7 +15,7 @@ edict_encourage_development = {
 	
 	
 	ai_will_do = {
-		factor = 10.0
+		factor = 15.0
 		modifier = {
 			factor = 0
 			owner = { is_at_war = yes }

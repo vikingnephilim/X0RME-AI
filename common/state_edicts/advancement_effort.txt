@@ -16,7 +16,7 @@ edict_advancement_effort = {
 	
 	ai_will_do = {
 		# has to be around at least 10 to be picked (depends on maintainance cost and general economy)
-		factor = 100.0
+		factor = 120.0
 		modifier = {
 			factor = 0
 			all_province_in_state = {
