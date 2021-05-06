@@ -29,6 +29,36 @@ edict_encourage_development = {
 			owner = { government = tribal }
 		}
 		modifier = {
+			factor = 0.8
+			all_province_in_state = {
+				NOT = { development = 10 }
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_province_in_state = {
+				trade_goods = grain
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_province_in_state = {
+				trade_goods = wine
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_province_in_state = {
+				trade_goods = fish
+			}
+		}
+		modifier = {
+			factor = 0.9
+			any_province_in_state = {
+				trade_goods = livestock
+			}
+		}
+		modifier = {
 			factor = 1.1
 			owner = { is_great_power = yes }
 		}
@@ -46,9 +76,15 @@ edict_encourage_development = {
 			}
 		}
 		modifier = {
+			factor = 1.6
+			any_province_in_state = {
+				num_of_times_improved_by_owner = 4
+			}
+		}
+		modifier = {
 			factor = 2.0
 			any_province_in_state = {
-				num_of_times_improved_by_owner = 5
+				num_of_times_improved_by_owner = 6
 			}
 		}
 		modifier = {
