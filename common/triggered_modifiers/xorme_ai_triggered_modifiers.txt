@@ -7,7 +7,7 @@ xorme_ai_small_nation_anti_rebel_modifier = {
 	trigger = {
 		ai = yes
 	}
-	governing_capacity = 50
+	governing_capacity = 25
 	land_forcelimit = 1
 	naval_forcelimit = 1
 	global_unrest = -1
@@ -23,7 +23,7 @@ xorme_ai_big_nation_anti_rebel_modifier = {
 	trigger = {
 		ai = yes
 	}
-	governing_capacity_modifier = 0.2
+	governing_capacity_modifier = 0.1
 	land_forcelimit_modifier = 0.05
 	naval_forcelimit_modifier = 0.05
 	global_unrest = -1
