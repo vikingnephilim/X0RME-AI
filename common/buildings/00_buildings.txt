@@ -7,7 +7,7 @@ marketplace = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -53,7 +53,7 @@ workshop = {
 	allow_in_gold_provinces = no
 	#BASE
 	ai_will_do = {
-		factor = 1.5
+		factor = 2.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -208,7 +208,7 @@ temple = {
 		local_tax_modifier = 0.4
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 1.25
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -363,7 +363,7 @@ barracks = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -568,14 +568,16 @@ courthouse = {
 	}
 
 	ai_will_do = {
-		factor = 2.5
+		factor = 3.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
 		}
 		modifier = {
-			factor = 0
-			is_capital = yes
+			factor = 0.1
+			any_province_in_state = {
+				is_capital = yes
+			}
 		}
 		modifier = {
 			factor = 0.5
@@ -649,15 +651,19 @@ courthouse = {
 		}
 		modifier = {
 			factor = 2.5
-			development = 20
+			development = 10
 		}
 		modifier = {
-			factor = 2.75
-			development = 25
+			factor = 3.0
+			development = 20
 		}
 		modifier = {
 			factor = 3.0
 			development = 30
+		}
+		modifier = {
+			factor = 3.5
+			development = 40
 		}
 		modifier = {
 			factor = 3.5
@@ -675,7 +681,7 @@ courthouse = {
 			num_of_buildings_in_province = 5
 		}
 		modifier = {
-			factor = 5.0
+			factor = 10.0
 			AND = {
 				OR = {
 					has_building = tradecompany
@@ -1059,7 +1065,7 @@ university = {
 
 	ai_will_do = {
 		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
-		factor = 5
+		factor = 10.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -1172,6 +1178,10 @@ trade_depot = {
 			factor = 0.5
 			owner = { num_of_loans = 1 }
 		}
+		modifier = {
+			factor = 10.0
+			has_building = marketplace
+		}
 	}
 }
 
@@ -1223,7 +1233,7 @@ training_fields = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -1609,7 +1619,7 @@ town_hall = {
 		}
 		modifier = {
 			factor = 1.4
-			owner = { total_development = 250 }
+			owner = { total_development = 300.0 }
 		}
 		modifier = {
 			factor = 1.45
@@ -1848,7 +1858,7 @@ wharf = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 250
+		factor = 300.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -1912,7 +1922,7 @@ weapons = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 250
+		factor = 300.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -1966,7 +1976,7 @@ textile = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 250
+		factor = 300.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -2022,7 +2032,7 @@ plantations = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 250
+		factor = 300.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -2130,7 +2140,7 @@ farm_estate = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 250
+		factor = 300.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -2185,7 +2195,7 @@ mills = {
 	onmap = yes
 
 	ai_will_do = {
-		factor = 250
+		factor = 300.0
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -2348,10 +2358,10 @@ impressment_offices = {
 	}
 
 	modifier = {
-		local_sailors = 250
+		local_sailors = 300.0
 	}
 	bonus_modifier = {
-		local_sailors = 250
+		local_sailors = 300.0
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -2475,7 +2485,31 @@ state_house = {
 			}
 		}
 		modifier = {
-			factor = 5
+			factor = 2.5
+			all_province_in_state = {
+				development = 10
+			}
+		}
+		modifier = {
+			factor = 3.0
+			all_province_in_state = {
+				development = 15
+			}
+		}
+		modifier = {
+			factor = 3.5
+			all_province_in_state = {
+				development = 20
+			}
+		}
+		modifier = {
+			factor = 3.5
+			all_province_in_state = {
+				development = 25
+			}
+		}
+		modifier = {
+			factor = 5.0
 			NOT = { development = 15 }
 		}
 		modifier = {

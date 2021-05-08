@@ -1621,7 +1621,7 @@ quality_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 2.1
+		factor = 2.0
 		modifier = {
 			factor = 0.75
 			ROOT = { has_idea_group = quantity_ideas }
@@ -1752,6 +1752,10 @@ quantity_ideas = {
 					is_march = yes
 				}
 			}
+		}
+		modifier = {
+			factor = 1.2
+			ROOT = { total_development = 200 }
 		}
 		modifier = {
 			factor = 1.3
